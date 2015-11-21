@@ -1,15 +1,16 @@
 {
-  "name": "cacheman-mongo",
-  "version": "0.2.1",
+  "name": "sc-cacheman-mongo",
+  "version": "0.5.0",
   "description": "MongoDB standalone caching library for Node.JS and also cache engine for cacheman",
   "author": "Jonathan Brumley <cayasso@gmail.com>",
+  "contributors": "JL",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "node ./node_modules/.bin/mocha --reporter spec --bail"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/cayasso/cacheman-mongo.git"
+    "url": "git://github.com/sandscap-sc/cacheman-mongo.git"
   },
   "keywords": [
     "cache",
@@ -25,7 +26,7 @@
     "mocha": "*"
   },
   "dependencies": {
-    "mongodb": "^1.4.30",
+    "mongodb": "^2.0.49",
     "mongodb-uri": "^0.9.7",
     "thunky": "^0.1.0"
   }
